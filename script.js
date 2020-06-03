@@ -38,6 +38,8 @@ function main(){
     Promise.all(allRequests).then(allData => {
         allPokemon = [...allData];
         handleData();
+    }).catch(error=>{
+        alert("could not load data please reload page");
     });
 }
 
@@ -51,6 +53,7 @@ function makeRequest(index){
         })).catch(error=>reject("Error reading from api"))
     });
 }
+
 /*this will change the DOM in any way you want when all the pokemons data has been received from the api.
 for example it will update the select boxes and enable all the inputs*/
 function handleData(){
