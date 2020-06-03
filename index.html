@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <title>Pokedex</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Pokedex simulator">
+        <meta name="author" content="Brendan Aucoin">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type = "text/javascript" src = "js/script.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel = "stylesheet" href = "css/styles.css" > </link>  
+    </head>
+
+    <body>
+        <br>
+        <!-- the title -->
+        <div class = "title-container">
+            <h1 class = "title">Pokedex</h1>
+            <img class = "pokedexImage" src = "images/pokedex.png" width = 270 height = 193 />
+        </div>
+        <br><br>
+        <!-- the main section -->
+        <div class="main-container">
+            <p class = "intro-text">This is a fan made pokedex using the pokeapi.
+                this is to use javascript functionalities like filtering,mapping, and other manipulations on arrays.
+                The main purpose of this is to use retreive and use data from a third party api and make a functional web page out of it
+            </p>
+
+            <!-- the attribute div -->
+            <div id = "attributes" class="attribute-container">
+                <!-- the drop down div -->
+                <div id = "dropdown" class = "dropdown-container">
+                    <!-- a div for the loader -->
+                    <div class="loader"></div>
+                    <!-- get rid of all this except the select boxes themselves -->
+                    <select id = "kanto-pokemon" class = "select-box input" name = "kanto-pokemon"><option selected disabled>Kanto</option></select>
+                    <select id = "johto-pokemon" class = "select-box input" name = "johto-pokemon"><option selected disabled>Johto</option></select>
+                    <select id = "hoenn-pokemon" class = "select-box input" name = "hoenn-pokemon"><option selected disabled>Hoenn</option></select>
+                    <select id = "sinnoh-pokemon"class = "select-box input" name = "sinnoh-pokemon"><option selected disabled>Sinnoh</option></select>
+                    <br>
+                    <select id = "unova-pokemon"class = "select-box input" name = "unova-pokemon"><option selected disabled>Unova</option></select>
+                    <select id = "kalos-pokemon"class = "select-box input" name = "kalos-pokemon"><option selected disabled>Kalos</option></select>
+                    <select id = "alola-pokemon"class = "select-box input" name = "alola-pokemon"><option selected disabled>Alola</option></select>
+                </div>
+                <!-- the type div -->
+                <div id = "types" class="type-container">
+                    <!-- where all the buttons go -->
+                    <button class = "input type-button" style = "background-color:#006600; color:white;">Bug</button>
+                    <button class = "input  type-button"  style = "background-color:#606060; color:white;">Dark</button>
+                    <button class = "input  type-button"  style = "background-color:#4C0099; color:white;">Dragon</button>
+                    <button class = "input  type-button"  style = "background-color:#FFD700; color:white;">Electric</button>
+                    <button class = "input  type-button"  style = "background-color:#FF3399; color:white;">Fairy</button>
+                    <button class = "input  type-button"  style = "background-color:#CC6600; color:white;">Fighting</button>
+                    <button class = "input  type-button"  style = "background-color:#FF0000; color:white;">Fire</button>
+                    <button class = "input  type-button"  style = "background-color:#A0A0A0; color:white;">Flying</button>
+                    <button class = "input  type-button"  style = "background-color:#9933FF; color:white;">Ghost</button>
+                    <br>
+                    <button class = "input  type-button"  style = "background-color:#00FF00; color:white;">Grass</button>
+                    <button class = "input  type-button"  style = "background-color:#FF9933; color:white;">Ground</button>
+                    <button class = "input  type-button"  style = "background-color:#00FFFF; color:white;">Ice</button>
+                    <button class = "input  type-button"  style = "background-color:#E0E0E0; color:white;">Normal</button>
+                    <button class = "input  type-button"  style = "background-color:#CC99FF; color:white;">Poison</button>
+                    <button class = "input  type-button"  style = "background-color:#CC00CC; color:white;">Psychic</button>
+                    <button class = "input  type-button"  style = "background-color:#663300; color:white;">Rock</button>
+                    <button class = "input  type-button"  style = "background-color:#808080; color:white;">Steel</button>
+                    <button class = "input  type-button"  style = "background-color:#0080FF; color:white;">Water</button>
+                </div>
+            </div>
+            
+        </div>
+
+        <div id = "pokemon-display" class="display-pokemon-container">
+        
+        </div>
+
+
+    </body>
+
+</html>
